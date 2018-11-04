@@ -1,4 +1,4 @@
-# Nombre de producto
+# Primera parte
 > Breve descripción de lo que hace tu producto.
 
 [![NPM Version][npm-image]][npm-url]
