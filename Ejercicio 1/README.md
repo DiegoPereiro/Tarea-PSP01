@@ -1,17 +1,15 @@
-# Primera parte
-> Breve descripción de lo que hace tu producto.
+# Ejercicio 1
+> Este ejercicio se compone de tres partes.
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-Uno o dos párrafos sobre tu producto y el problema que resuelve.
+## Primera parte
 
-![](../header.png)
+Introduczco codio en el IDE eclipse donde se le pide al usuario la entrada aleatoria de numeros enteros, los cuales a medida que se introducen se hace una comprobacion que el numero sea entero, si este es entero se añade a un arraylist.
 
-## Instalación
-
-OS X y Linux:
+El el momento que el usuario no introduzca nada, y acepte. El programa procede a ordenar de mayor a menor el array list y luego a listarlos por consola.
 
 ```sh
 npm install my-crazy-module --save
