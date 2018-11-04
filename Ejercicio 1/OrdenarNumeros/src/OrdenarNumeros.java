@@ -1,3 +1,4 @@
+import java.awt.image.ImageProducer;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -19,57 +20,35 @@ public class OrdenarNumeros {
 
 	public static void main(String[] args) {
 
-		InputStreamReader teclado = new InputStreamReader(System.in);
-		BufferedReader fr = new BufferedReader(teclado);
+		InputStreamReader inputStreamReader = new InputStreamReader(System.in);
+		BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 
-		String entrada;
-		boolean ordenar = false;
-		listaNumeros = new ArrayList<>();
+		Integer numero;
+		ArrayList<Integer> arrayList = new ArrayList<>();
 
-		System.out.println("Ponga numeros de forma aleatoria, una vez que deje un numero en blanco se procede a ordenar");
-		System.out.println("-------------------------------------------------------------------------------------------");
-		
-		//solicita los numeros a ordenar
-		
-		while (ordenar == false) {
-			System.out.print("Ponga un numero:");
-			try {
-				entrada = fr.readLine();
-				if (entrada.equals("")) {
-					ordenar = true;
-				} else {
-					try {
-						listaNumeros.add(Integer.parseInt(entrada));
-					} catch (NumberFormatException e) {
-						System.out.println("Por favor, ponga un numero entero");
-					}
+		String entrada = null;
+
+		try {
+			while (!(entrada = bufferedReader.readLine()).equals("")) {//cuando la entrada es igual a "" entonces pasamos de while y ordenamos la lista
+				try {
+					numero = Integer.parseInt(entrada);//Pasamos un Strin a entero y si da error por que no es un numero lanzamos un mensaje
+					arrayList.add(numero);
+				} catch (NumberFormatException e) {
+					System.out.println("El numero a de ser entero");
 				}
-
-			} catch (IOException e) {
-				e.printStackTrace();
 			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		//ordena los numeros solicitados
-		System.out.println("");
-		System.out.println("Lista de numeros ordenados:");
-		
-		listaNumeros.sort(null);
-		
-		for (Integer num: listaNumeros) {
-			System.out.println(num);
+
+		arrayList.sort(null);//ordenamos el arraylist
+		for (Integer num : arrayList) {
+			System.out.println(num);//Listamos el arraylist
 		}
-		
-		
-	
-		
-		
-		
-		
-		
-		
-		
 		
 
+		
 	}
 
 }
