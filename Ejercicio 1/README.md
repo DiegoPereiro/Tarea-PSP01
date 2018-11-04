@@ -1,64 +1,24 @@
 # Ejercicio 1
 > Este ejercicio se compone de tres partes.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 ## Primera parte
 
-Introduczco codio en el IDE eclipse donde se le pide al usuario la entrada aleatoria de numeros enteros, los cuales a medida que se introducen se hace una comprobacion que el numero sea entero, si este es entero se añade a un arraylist.
+Introduczco codigo en el IDE eclipse donde se le pide al usuario la entrada aleatoria de numeros enteros, los cuales a medida que se introducen se hace una comprobacion que el numero sea entero, si este es entero se añade a un arraylist.
 
 El el momento que el usuario no introduzca nada, y acepte. El programa procede a ordenar de mayor a menor el array list y luego a listarlos por consola.
 
-```sh
-npm install my-crazy-module --save
-```
+![captura1](https://user-images.githubusercontent.com/44735067/47967213-4f302080-e05b-11e8-82e7-7cbb5f3dec7f.PNG)
 
-Windows:
 
-```sh
-edit autoexec.bat
-```
+## Segunda parte
 
-## Ejemplo de uso
+Introduczco codigo donde a traves de un bucle 'for' que se repite 40 veces se genera cada vez un numero aleatorio comprendido entre 0 y 100 a traves de la clase 'Random'
 
-Algunos casos de ejemplo sobre cómo utilizar tu producto. Algunos bloques de código y capturas de pantalla harán que sea más atractivo.
+![captura2](https://user-images.githubusercontent.com/44735067/47967322-4f7ceb80-e05c-11e8-8b6b-28a40cd9c7ad.PNG)
 
-## Configuración de desarrollo
+El momento de iniciar el programa se generan 40 numeros aleatorios.
 
-Describe como instalar todas las dependencias y como ejecutar la batería de tests (en caso de tenerla). Si funciona en múltiples plataformas intenta describirlas todas si tuviesen pasos diferentes.
 
-```sh
-make install
-npm test
-```
+![captura3](https://user-images.githubusercontent.com/44735067/47967345-94088700-e05c-11e8-8f75-b28e6434825c.PNG)
 
-## Historial de versiones
 
-* 0.2.1
-    * CAMBIO: Actualizada la documentación (el módulo de código permanece igual)
-* 0.2.0
-    * CAMBIO: Eliminado `setDefaultXYZ()`
-    * AÑADIDO: Añadido `init()`
-* 0.1.1
-    * ARREGLADO: Cuelgue cuando se llama a `baz()` (Gracias a  @NombreDelAmableContribuidor!)
-* 0.1.0
-    * La primera release
-    * CAMBIO: Renombrado `foo()` a `bar()`
-* 0.0.1
-    * Trabajo en progreso
-
-## Meta
-
-Tu nomre – [@TuTwitter](https://twitter.com/dbader_org) – TuEmail@example.com
-
-Distribuido bajo la licencia XYZ. Ver ``LICENSE`` para más información.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
-
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
